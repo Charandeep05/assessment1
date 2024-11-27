@@ -1,0 +1,20 @@
+#Create a React App
+npx create-react-app invoice-frontend
+cd invoice-frontend
+
+#Install Necessary Packages
+npm install axios react-router-dom
+
+#Create an API Configuration File
+// src/api.js
+import axios from "axios";
+
+const api = axios.create({
+  baseURL: "http://127.0.0.1:8000/api",
+});
+
+export default api;
+
+#Start the React Development Server
+npm start
+
